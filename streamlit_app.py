@@ -729,7 +729,7 @@ def main():
                 col1, col2 = st.columns(2)
                 
                 with col1:
-                    st.write("Record directly:")
+                    st.write("Record directly--NOT WORK YET, UPLOADING FILES INSTEAD:")
                     # Add microphone recording functionality 
                     record_audio()
                     # Display a placeholder for where the recording will appear
