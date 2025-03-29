@@ -635,7 +635,7 @@ def main():
         else:
             password = st.text_input("Enter password:", type="password")
             if st.button("Submit Password"):
-                if password == CORRECT_PASSWORD:
+                if password == CORRECT_PASSWORD1 or password == CORRECT_PASSWORD2:
                     st.session_state.api_key = DEFAULT_API_KEY
                     st.session_state.api_key_entered = True
                     st.success("Password accepted!")
