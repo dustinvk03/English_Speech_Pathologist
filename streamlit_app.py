@@ -18,7 +18,7 @@ import re  # Add this for regex pattern matching
 
 # Configure the page
 st.set_page_config(
-    page_title="English Speech Pathologist",
+    page_title="English Speech Pathologist v1",
     page_icon="🎙️",
     layout="wide"
 )
