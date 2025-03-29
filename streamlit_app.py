@@ -665,7 +665,7 @@ def main():
                     duration = st.slider("Speaking Duration (minutes)", 1, 10, 2)
                     
                     # Topic selector
-                    topic_options = ["Daily Reflection", "A Recent Movie or TV Show", "My Typical Weekend", "The Last Time I Traveled", "Grocery Shopping Habits",
+                    topic_options = ["Daily Reflection", "A Recent Movie or TV Show", "My Typical Weekend",  "Grocery Shopping Habits", "A IELTS Part 2", "The Last Time I Traveled",
                                      "A Recent Conversation with a Friend", "Foods I Dislike and Why", "My Favorite Book or Movie", "A Memorable Vacation", "A Recent News Event",
                                      "My Hometown", "My Favorite Hobby", "A Memorable Birthday", "A Time I Overcame a Challenge",  "A Memorable Meal",
                                      "My Job or Studies", "A Skill That's Important in My Field"]                    
