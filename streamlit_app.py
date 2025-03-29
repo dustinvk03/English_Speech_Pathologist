@@ -151,7 +151,8 @@ if 'api_key_entered' not in st.session_state:
     st.session_state.api_key_entered = False
 
 # Define the password
-CORRECT_PASSWORD = "chaucaudu"
+CORRECT_PASSWORD1 = "ChauCauDu"
+CORRECT_PASSWORD2 = "TestAppWithDustin"
 DEFAULT_API_KEY = "AIzaSyCXy2iNzOa5u34CeKIaKu1ykKSxYapH7n4"  # Your API Key
 
 # Gemini API Configuration
