@@ -839,7 +839,7 @@ def main():
             #     st.markdown(f"<div class='recommendation'>{recommendation}</div>", unsafe_allow_html=True)
             
             # Display improvement recommendations
-            st.markdown("<h3 class='sub-header'>Strengths</h3>", unsafe_allow_html=True)
+            # st.markdown("<h3 class='sub-header'>Strengths</h3>", unsafe_allow_html=True)
             
             for strengths in st.session_state.evaluation_results["strengths"]:
                 st.markdown(f"<div class='strengths'>{strengths}</div>", unsafe_allow_html=True)            
