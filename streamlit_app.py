@@ -607,7 +607,7 @@ def main():
     st.markdown("<p>Improve your English speaking skills with AI-powered feedback. Author: Dustin</p>", unsafe_allow_html=True)
     st.markdown("<p>You set up what you want to learn, get useful vocabs and hints, then get evaluation by AI</p>", unsafe_allow_html=True)
     st.markdown("<p>NOTE: To run this, you either need a **password** or a **Gemini API** which can be obtained easily with a gmail acount here: https://aistudio.google.com/app/apikey </p>", unsafe_allow_html=True)
-    st.markdown('<p><a href="https://www.dropbox.com/scl/fi/ht3hk1nafgnh4mqoblh2q/AI_Speech_Evaluation_Tutorial.mkv?rlkey=bpvocqyol9y5rbxtfp0r9sbyr&e=1&st=fiic77m7&dl=0" target="_blank" style="text-decoration: none; font-size: 18px; font-weight: bold;">INSTRUCTION VIDEO:</a></p>', unsafe_allow_html=True)
+    st.markdown('<p><a href="https://www.dropbox.com/scl/fi/ht3hk1nafgnh4mqoblh2q/AI_Speech_Evaluation_Tutorial.mkv?rlkey=bpvocqyol9y5rbxtfp0r9sbyr&e=1&st=fiic77m7&dl=0" target="_blank" style="text-decoration: none; font-size: 18px; font-weight: bold;">GO TO INSTRUCTION VIDEO</a></p>', unsafe_allow_html=True)
 
     # API Key or Password input
     if not st.session_state.api_key_entered:
