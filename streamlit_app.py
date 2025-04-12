@@ -150,10 +150,16 @@ if 'content' not in st.session_state:
 if 'api_key_entered' not in st.session_state:
     st.session_state.api_key_entered = False
 
+import os
+# Accessing environment variables
+password1 = os.environ['PASSWORD1']
+password2 = os.environ['PASSWORD2']
+api_key = os.environ['API_KEY']
 # Define the password
-# CORRECT_PASSWORD1 = PASSWORD1
-# CORRECT_PASSWORD2 = PASSWORD2
-# DEFAULT_API_KEY = API_KEY  # Your API Key
+CORRECT_PASSWORD1 = password1
+CORRECT_PASSWORD2 = password2
+DEFAULT_API_KEY = api_key  # Your API Key
+
 
 # Gemini API Configuration
 def setup_gemini(api_key):
