@@ -1,6 +1,6 @@
 # English Speech Pathologist
 
-[The app:](https://english-speech-pathologist.streamlit.app/): https://english-speech-pathologist.streamlit.app/
+[The app](https://english-speech-pathologist.streamlit.app/): https://english-speech-pathologist.streamlit.app/
 
 [Instruction video](https://www.dropbox.com/scl/fi/ht3hk1nafgnh4mqoblh2q/AI_Speech_Evaluation_Tutorial.mkv?rlkey=bpvocqyol9y5rbxtfp0r9sbyr&e=1&st=fiic77m7&dl=0)
 
