@@ -1,9 +1,10 @@
 # English Speech Pathologist
 
-[The app:](https://english-speech-pathologist.streamlit.app/)
+[The app:](https://english-speech-pathologist.streamlit.app/): https://english-speech-pathologist.streamlit.app/
 
-[Instruction](https://www.dropbox.com/scl/fi/ht3hk1nafgnh4mqoblh2q/AI_Speech_Evaluation_Tutorial.mkv?rlkey=bpvocqyol9y5rbxtfp0r9sbyr&e=1&st=fiic77m7&dl=0)
+[Instruction video](https://www.dropbox.com/scl/fi/ht3hk1nafgnh4mqoblh2q/AI_Speech_Evaluation_Tutorial.mkv?rlkey=bpvocqyol9y5rbxtfp0r9sbyr&e=1&st=fiic77m7&dl=0)
 
+**![gift](https://github.com/dustinvk03/English_Speech_Pathologist/blob/master/screenshot/UI1.gif)
 
 ## Overview
 
@@ -109,3 +110,13 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 **![screenshot4](https://github.com/dustinvk03/English_Speech_Pathologist/blob/master/screenshot/p4.png)
 
 **![screenshot5](https://github.com/dustinvk03/English_Speech_Pathologist/blob/master/screenshot/p5.png)
+
+**![screenshot6](https://github.com/dustinvk03/English_Speech_Pathologist/blob/master/screenshot/p6.png)
+
+**![screenshot7](https://github.com/dustinvk03/English_Speech_Pathologist/blob/master/screenshot/p7.png)
+
+**![screenshot8](https://github.com/dustinvk03/English_Speech_Pathologist/blob/master/screenshot/p8.png)
+
+**![screenshot9](https://github.com/dustinvk03/English_Speech_Pathologist/blob/master/screenshot/p9.png)
+
+
