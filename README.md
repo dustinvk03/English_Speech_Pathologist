@@ -1,25 +1,111 @@
-# 📦 Streamlit App Starter Kit 
+# English Speech Pathologist
+
+[The app:](https://english-speech-pathologist.streamlit.app/)
+
+[Instruction](https://www.dropbox.com/scl/fi/ht3hk1nafgnh4mqoblh2q/AI_Speech_Evaluation_Tutorial.mkv?rlkey=bpvocqyol9y5rbxtfp0r9sbyr&e=1&st=fiic77m7&dl=0)
+
+
+## Overview
+
+English Speech Pathologist is an AI-powered web application that helps users improve their English speaking skills through automated speech evaluation and personalized feedback. This tool uses Google's Gemini AI to analyze speech recordings and provide detailed assessments on pronunciation, vocabulary, grammar, fluency, and coherence.
+
+## Features
+
+- **AI-Powered Speech Evaluation**: Get comprehensive feedback on your English speaking abilities
+- **Customizable Practice Sessions**: Select topics, difficulty levels, and duration based on your needs
+- **Real-time Audio Recording**: Record directly from your browser or upload audio files
+- **Detailed Feedback**: Receive specific scores and recommendations across 5 key areas
+- **Visual Analytics**: View your performance through an intuitive radar chart
+- **Error Highlighting**: See grammar, vocabulary, and expression suggestions directly in your transcription
+
+## Tech Stack
+
+- **Frontend & Backend**: Streamlit
+- **AI Model**: Google Gemini 2.0 Flash
+- **Data Visualization**: Matplotlib
+- **Audio Processing**: Browser-based audio recording
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/dustinvk03/English_Speech_Pathologist
+   cd english-speech-pathologist
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the application:
+   ```bash
+   streamlit run app.py
+   ```
+
+## Requirements
+
 ```
-⬆️ (Replace above with your app's name)
+streamlit
+numpy
+matplotlib
+google-generativeai
 ```
 
-Description of the app ...
+## Usage
 
-## Demo App
+1. **Authentication**: Enter your Google API key or use the provided password
+2. **Set up your practice session**:
+   - Choose a speaking topic
+   - Set the duration (1-10 minutes)
+   - Select your difficulty level (Beginner, Intermediate, Advanced)
+3. **Practice speaking**:
+   - Record directly using your microphone
+   - Or upload an audio file (WAV, MP3, M4A)
+4. **Review your results**:
+   - Overall score and detailed breakdown
+   - Transcription with highlighted improvement areas
+   - Strengths and recommendations for improvement
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
+## Speech Evaluation Criteria
 
-## GitHub Codespaces
+The application evaluates your speech based on five critical areas:
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
+- **Pronunciation**: Accuracy of sounds, stress, and intonation
+- **Vocabulary**: Word choice, variety, and appropriateness
+- **Grammar**: Correctness of sentence structure and grammar rules
+- **Fluency**: Smoothness, pace, and natural flow of speech
+- **Coherence**: Organization, logical flow, and clarity of ideas
 
-## Section Heading
+## API Key Setup
 
-This is filler text, please replace this with text for this section.
+To use this application, you need a Google API key with access to the Gemini model:
 
-## Further Reading
+1. Get your API key from the [Google AI Studio](https://aistudio.google.com/prompts/new_chat)
+2. Enter it in the application when prompted
 
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## Acknowledgments
+
+- This application uses Google's Gemini AI technology
+- UI components powered by Streamlit
+- Visualization created with Matplotlib
+
+**![screenshot1](https://github.com/dustinvk03/English_Speech_Pathologist/blob/master/screenshot/p1.png)
+
+**![screenshot2](https://github.com/dustinvk03/English_Speech_Pathologist/blob/master/screenshot/p2.png)
+
+**![screenshot3](https://github.com/dustinvk03/English_Speech_Pathologist/blob/master/screenshot/p3.png)
+
+**![screenshot4](https://github.com/dustinvk03/English_Speech_Pathologist/blob/master/screenshot/p4.png)
+
+**![screenshot5](https://github.com/dustinvk03/English_Speech_Pathologist/blob/master/screenshot/p5.png)
