@@ -601,7 +601,7 @@ def evaluate_speech(model, audio_file, topic, duration, difficulty):
         return None
         
 intro_markdown = """
-# 🎙️ English Speech Pathologist
+# 🎙️ English Speech Pathologist with Dustin
 
 Boost your English speaking skills with AI-powered feedback and personalized recommendations.
 
