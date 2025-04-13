@@ -599,7 +599,8 @@ def evaluate_speech(model, audio_file, topic, duration, difficulty):
     except Exception as e:
         st.error(f"Error evaluating speech: {str(e)}")
         return None
-        intro_markdown = """
+        
+intro_markdown = """
 # 🎙️ English Speech Pathologist
 
 Boost your English speaking skills with AI-powered feedback and personalized recommendations.
@@ -611,35 +612,34 @@ Boost your English speaking skills with AI-powered feedback and personalized rec
 * **Review detailed analysis** with highlighted improvement areas and tailored recommendations
 """
 
-# Place this at the top of your app, right after the page configuration
-st.markdown(intro_markdown)
-
-# Add video and GitHub link in columns
-col1, col2 = st.columns([3, 1])
-
-with col1:
-    st.markdown("""
-    ### 📹 Watch the instruction video
-    <iframe width="100%" height="315" src="https://www.dropbox.com/scl/fi/ht3hk1nafgnh4mqoblh2q/AI_Speech_Evaluation_Tutorial.mkv?rlkey=bpvocqyol9y5rbxtfp0r9sbyr&e=1&st=fiic77m7&dl=0" 
-    title="English Speech Pathologist Tutorial" frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    """, unsafe_allow_html=True)
-
-with col2:
-    st.markdown("""
-    ### Connect with us
-    <a href="https://github.com/dustinvk03/English_Speech_Pathologist/tree/master" target="_blank">
-        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="50">
-        <br>View on GitHub
-    </a>
-    """, unsafe_allow_html=True)
 
 # You can also add a separator for visual clarity
 # st.markdown("---")
 # Main app
 def main():
     # Header
-    st.markdown(intro_markdown)
+    
+    # Add video and GitHub link in columns
+    col1, col2 = st.columns([3, 1])
+
+    with col1:
+        st.markdown("""
+        ### 📹 Watch the instruction video
+        <iframe width="100%" height="315" src="https://www.dropbox.com/scl/fi/ht3hk1nafgnh4mqoblh2q/AI_Speech_Evaluation_Tutorial.mkv?rlkey=bpvocqyol9y5rbxtfp0r9sbyr&e=1&st=fiic77m7&dl=0" 
+        title="English Speech Pathologist Tutorial" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        """, unsafe_allow_html=True)
+    
+    with col2:
+        st.markdown("""
+        ### Connect with us
+        <a href="https://github.com/dustinvk03/English_Speech_Pathologist/tree/master" target="_blank">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="50">
+            <br>View on GitHub
+        </a>
+        """, unsafe_allow_html=True)
+        st.markdown(intro_markdown)
+        
     # st.markdown("<h1 class='main-header'>🎙️ English Speech Pathologist</h1>", unsafe_allow_html=True)
     # st.markdown("<p>Improve your English speaking skills with AI-powered feedback. Author: Dustin</p>", unsafe_allow_html=True)
     # st.markdown("<p>You set up what you want to learn, get useful vocabs and hints, then get evaluation by AI</p>", unsafe_allow_html=True)
