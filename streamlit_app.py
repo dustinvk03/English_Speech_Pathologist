@@ -599,8 +599,7 @@ def evaluate_speech(model, audio_file, topic, duration, difficulty):
     except Exception as e:
         st.error(f"Error evaluating speech: {str(e)}")
         return None
-        
-intro_markdown = """
+        intro_markdown = """
 # 🎙️ English Speech Pathologist
 
 Boost your English speaking skills with AI-powered feedback and personalized recommendations.
@@ -610,9 +609,30 @@ Boost your English speaking skills with AI-powered feedback and personalized rec
 * **Record yourself speaking** directly in your browser or upload an audio file
 * **Get instant AI feedback** on pronunciation, vocabulary, grammar, fluency, and coherence
 * **Review detailed analysis** with highlighted improvement areas and tailored recommendations
-
-Ready to improve your English speaking skills? Set up your practice session below!
 """
+
+# Place this at the top of your app, right after the page configuration
+st.markdown(intro_markdown)
+
+# Add video and GitHub link in columns
+col1, col2 = st.columns([3, 1])
+
+with col1:
+    st.markdown("""
+    ### 📹 Watch the instruction video
+    <iframe width="100%" height="315" src="https://www.dropbox.com/scl/fi/ht3hk1nafgnh4mqoblh2q/AI_Speech_Evaluation_Tutorial.mkv?rlkey=bpvocqyol9y5rbxtfp0r9sbyr&e=1&st=fiic77m7&dl=0" 
+    title="English Speech Pathologist Tutorial" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    """, unsafe_allow_html=True)
+
+with col2:
+    st.markdown("""
+    ### Connect with us
+    <a href="https://github.com/dustinvk03/English_Speech_Pathologist/tree/master" target="_blank">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="50">
+        <br>View on GitHub
+    </a>
+    """, unsafe_allow_html=True)
 
 # You can also add a separator for visual clarity
 # st.markdown("---")
@@ -625,6 +645,7 @@ def main():
     # st.markdown("<p>You set up what you want to learn, get useful vocabs and hints, then get evaluation by AI</p>", unsafe_allow_html=True)
     # st.markdown("<p>NOTE: To run this, you either need a **password** or a **Gemini API** which can be obtained easily with a gmail acount here: https://aistudio.google.com/app/apikey </p>", unsafe_allow_html=True)
     st.markdown('<p><a href="https://www.dropbox.com/scl/fi/ht3hk1nafgnh4mqoblh2q/AI_Speech_Evaluation_Tutorial.mkv?rlkey=bpvocqyol9y5rbxtfp0r9sbyr&e=1&st=fiic77m7&dl=0" target="_blank" style="text-decoration: none; font-size: 18px; font-weight: bold;">GO TO INSTRUCTION VIDEO</a></p>', unsafe_allow_html=True)
+    st.markdown('<p><a href="https://github.com/dustinvk03/English_Speech_Pathologist" target="_blank" style="text-decoration: none; font-size: 18px; font-weight: bold;">GO TO GITHUB </a></p>', unsafe_allow_html=True)
 
     # API Key or Password input
     if not st.session_state.api_key_entered:
