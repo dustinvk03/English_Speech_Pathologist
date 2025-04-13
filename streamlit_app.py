@@ -635,7 +635,7 @@ def main():
     
     with col2:
         st.markdown("""
-        ### Source code:
+        ### Source code
         <a href="https://github.com/yourusername/english-speech-pathologist" target="_blank">
             <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="50">
             <br>View on GitHub
