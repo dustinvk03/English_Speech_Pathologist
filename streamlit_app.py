@@ -625,13 +625,13 @@ def main():
     col1, col2 = st.columns([3, 1])
     
     with col1:
-    st.markdown("""
-    ### 📹 Watch Tutorial
-    <a href="https://www.dropbox.com/scl/fi/ht3hk1nafgnh4mqoblh2q/AI_Speech_Evaluation_Tutorial.mkv?rlkey=bpvocqyol9y5rbxtfp0r9sbyr&e=1&st=fiic77m7&dl=0" target="_blank">
-        <img src="https://www.svgrepo.com/show/294331/play-button-music-player.svg" width="50">
-        <br>View Tutorial Video
-    </a>
-    """, unsafe_allow_html=True)
+        st.markdown("""
+        ### 📹 Watch Tutorial
+        <a href="https://www.dropbox.com/scl/fi/ht3hk1nafgnh4mqoblh2q/AI_Speech_Evaluation_Tutorial.mkv?rlkey=bpvocqyol9y5rbxtfp0r9sbyr&e=1&st=fiic77m7&dl=0" target="_blank">
+            <img src="https://www.svgrepo.com/show/294331/play-button-music-player.svg" width="50">
+            <br>View Tutorial Video
+        </a>
+        """, unsafe_allow_html=True)
     
     with col2:
         st.markdown("""
