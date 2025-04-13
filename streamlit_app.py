@@ -599,14 +599,31 @@ def evaluate_speech(model, audio_file, topic, duration, difficulty):
     except Exception as e:
         st.error(f"Error evaluating speech: {str(e)}")
         return None
+        
+intro_markdown = """
+# 🎙️ English Speech Pathologist
 
+Boost your English speaking skills with AI-powered feedback and personalized recommendations.
+
+### How it works:
+* **Choose a topic** and difficulty level for your practice session
+* **Record yourself speaking** directly in your browser or upload an audio file
+* **Get instant AI feedback** on pronunciation, vocabulary, grammar, fluency, and coherence
+* **Review detailed analysis** with highlighted improvement areas and tailored recommendations
+
+Ready to improve your English speaking skills? Set up your practice session below!
+"""
+
+# You can also add a separator for visual clarity
+st.markdown("---")
 # Main app
 def main():
     # Header
-    st.markdown("<h1 class='main-header'>🎙️ English Speech Pathologist</h1>", unsafe_allow_html=True)
-    st.markdown("<p>Improve your English speaking skills with AI-powered feedback. Author: Dustin</p>", unsafe_allow_html=True)
-    st.markdown("<p>You set up what you want to learn, get useful vocabs and hints, then get evaluation by AI</p>", unsafe_allow_html=True)
-    st.markdown("<p>NOTE: To run this, you either need a **password** or a **Gemini API** which can be obtained easily with a gmail acount here: https://aistudio.google.com/app/apikey </p>", unsafe_allow_html=True)
+    st.markdown(intro_markdown)
+    # st.markdown("<h1 class='main-header'>🎙️ English Speech Pathologist</h1>", unsafe_allow_html=True)
+    # st.markdown("<p>Improve your English speaking skills with AI-powered feedback. Author: Dustin</p>", unsafe_allow_html=True)
+    # st.markdown("<p>You set up what you want to learn, get useful vocabs and hints, then get evaluation by AI</p>", unsafe_allow_html=True)
+    # st.markdown("<p>NOTE: To run this, you either need a **password** or a **Gemini API** which can be obtained easily with a gmail acount here: https://aistudio.google.com/app/apikey </p>", unsafe_allow_html=True)
     st.markdown('<p><a href="https://www.dropbox.com/scl/fi/ht3hk1nafgnh4mqoblh2q/AI_Speech_Evaluation_Tutorial.mkv?rlkey=bpvocqyol9y5rbxtfp0r9sbyr&e=1&st=fiic77m7&dl=0" target="_blank" style="text-decoration: none; font-size: 18px; font-weight: bold;">GO TO INSTRUCTION VIDEO</a></p>', unsafe_allow_html=True)
 
     # API Key or Password input
