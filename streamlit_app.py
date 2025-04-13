@@ -625,19 +625,12 @@ def main():
     col1, col2 = st.columns([3, 1])
     
     with col1:
-        st.markdown("""
-        ### 📹 Watch the instruction video
-        
-        <a href="https://www.dropbox.com/scl/fi/ht3hk1nafgnh4mqoblh2q/AI_Speech_Evaluation_Tutorial.mkv?rlkey=bpvocqyol9y5rbxtfp0r9sbyr&e=1&st=fiic77m7&dl=0" target="_blank">
-            <div style="display: flex; align-items: center; background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 15px; cursor: pointer; width: fit-content;">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 10px;">
-                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#2563EB"/>
-                </svg>
-                <span style="font-weight: 500;">Play Instruction Video</span>
-            </div>
-        </a>
-    
-    <p><em>Click the button above to watch a quick tutorial on how to use this app</em></p>
+    st.markdown("""
+    ### 📹 Watch Tutorial
+    <a href="https://www.dropbox.com/scl/fi/ht3hk1nafgnh4mqoblh2q/AI_Speech_Evaluation_Tutorial.mkv?rlkey=bpvocqyol9y5rbxtfp0r9sbyr&e=1&st=fiic77m7&dl=0" target="_blank">
+        <img src="https://www.svgrepo.com/show/294331/play-button-music-player.svg" width="50">
+        <br>View Tutorial Video
+    </a>
     """, unsafe_allow_html=True)
     
     with col2:
