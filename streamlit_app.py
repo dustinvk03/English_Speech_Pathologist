@@ -615,7 +615,7 @@ Ready to improve your English speaking skills? Set up your practice session belo
 """
 
 # You can also add a separator for visual clarity
-st.markdown("---")
+# st.markdown("---")
 # Main app
 def main():
     # Header
