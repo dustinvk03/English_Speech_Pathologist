@@ -653,7 +653,7 @@ def main():
     if not st.session_state.api_key_entered:
         st.markdown("<div class='api-input-container'>", unsafe_allow_html=True)
         st.markdown("<h3>Authentication Required</h3>", unsafe_allow_html=True)
-        st.markdown("<p>NOTE: To run this, you either need a <b>password<b> or a <b>Gemini API<b> which can be obtained easily with a gmail acount here: https://aistudio.google.com/app/apikey </p>", unsafe_allow_html=True)
+        st.markdown("<p>NOTE: To run this, you will need either a <b>password</b> or a <b>Gemini API</b>, which can be easily obtained with a Gmail account from <a href='https://aistudio.google.com/app/apikey' target='_blank'>https://aistudio.google.com/app/apikey</a>.</p>", unsafe_allow_html=True)
         auth_option = st.radio("Choose authentication method:", ["Enter Google API Key", "Enter Password"])
         
         if auth_option == "Enter Google API Key":
